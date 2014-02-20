@@ -1,0 +1,7 @@
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers.Test\bin\Debug\SimplHelpers.Test.dll
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers.Test\bin\Debug\SimplHelpers.Test.pdb
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers.Test\bin\Debug\SimplHelpers.dll
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers.Test\bin\Debug\SimplHelpers.pdb
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers.Test\obj\Debug\SimplHelpers.Test.csprojResolveAssemblyReference.cache
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers.Test\obj\Debug\SimplHelpers.Test.dll
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers.Test\obj\Debug\SimplHelpers.Test.pdb

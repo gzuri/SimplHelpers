@@ -1,0 +1,5 @@
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\bin\Debug\SimplHelpers.dll
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\bin\Debug\SimplHelpers.pdb
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.csprojResolveAssemblyReference.cache
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.dll
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.pdb
