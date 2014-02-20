@@ -3,3 +3,5 @@ C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\bin\
 C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.csprojResolveAssemblyReference.cache
 C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.dll
 C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.pdb
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\Interop.SystemMonitor.dll
+C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.csproj.ResolveComReference.cache
