@@ -10,20 +10,22 @@ namespace SimplHelpers
 {
     public static class ImageHelpers
     {
-        public static Image GetImageFromBase64(string imageInBase64)
+        public static bool GetImageFromBase64(string imageInBase64, out Image image)
         {
-            //get a temp image from bytes, instead of loading from disk
-            //data:image/gif;base64,
-            //this image is a single pixel (black)
-            byte[] bytes = Convert.FromBase64String(imageInBase64);
-
-            Image image;
-            using (MemoryStream ms = new MemoryStream(bytes))
+            image = null;
+            try
             {
-                image = Image.FromStream(ms);
+                byte[] bytes = Convert.FromBase64String(imageInBase64);
+                using (MemoryStream ms = new MemoryStream(bytes))
+                {
+                    image = Image.FromStream(ms);
+                }
+                return true;
             }
-
-            return image;
+            catch 
+            {
+            }
+            return false;
         }
     }
 }
