@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="CollectionsHelpersTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ObjectHelpersTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SimplHelpers\SimplHelpers.csproj">

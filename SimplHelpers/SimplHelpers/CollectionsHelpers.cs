@@ -19,5 +19,10 @@ namespace SimplHelpers
             var type = @enum.GetType();
             return Enum.GetValues(type).Cast<int>().Distinct().ToDictionary(e => e, e => Enum.GetName(type, e));
         }
+
+        public static HashSet<T> ToHashSet<T>(this IEnumerable<T> source) 
+        {
+            return new HashSet<T>(source);
+        }
     }
 }
