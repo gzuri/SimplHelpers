@@ -34,7 +34,9 @@ namespace SimplHelpers
                 if (onlyPrimitiveTypes && sourceProperty.PropertyType.IsClass)
                     continue;
 
-                destProperty.SetValue(destination, sourceValue);
+                var setMethod = destProperty.GetSetMethod();
+                if (setMethod != null)
+                    destProperty.SetValue(destination, sourceValue);
             }
             return destination;
         }
