@@ -31,7 +31,7 @@ namespace SimplHelpers
                 if (sourceValue == null)
                     continue;
 
-                if (onlyPrimitiveTypes && sourceProperty.PropertyType.IsClass)
+                if (onlyPrimitiveTypes && sourceProperty.PropertyType.IsClass && sourceProperty.PropertyType != typeof(string))
                     continue;
 
                 var setMethod = destProperty.GetSetMethod();
@@ -39,6 +39,56 @@ namespace SimplHelpers
                     destProperty.SetValue(destination, sourceValue);
             }
             return destination;
+        }
+
+
+        public static List<Tuple<string, Tuple<string, string>>> CompareObject<S, D>(S source, D destination, bool ignoreMissingProperties, params string[] ignoreProperties) 
+        {
+            var sourceType = typeof(S);
+            var destType = typeof(D);
+            var sourceProperties = sourceType.GetProperties().ToArray();
+            var destProperties = destType.GetProperties().ToArray();
+            var returnData = new List<Tuple<string, Tuple<string, string>>>();
+            foreach (PropertyInfo sourceProperty in sourceType.GetProperties())
+            {
+                if (ignoreProperties.Contains(sourceProperty.Name))
+                    continue;
+                
+                var destProperty = destProperties.FirstOrDefault(x => x.Name == sourceProperty.Name);
+
+                object sourceValue = sourceProperty.GetValue(source);
+                if (destProperty == null) 
+                {
+                    if (!ignoreMissingProperties)
+                        returnData.Add(Tuple.Create(sourceProperty.Name, Tuple.Create(sourceValue.ToString(), "null")));
+                    continue;
+                }
+
+                if (sourceProperty.PropertyType.IsClass && sourceProperty.PropertyType != typeof(string))
+                    continue;
+
+                object destValue = destProperty.GetValue(destination);
+
+                if (sourceValue == null && destValue == null)
+                    continue;
+                else if (sourceValue == null) 
+                {
+                    returnData.Add(Tuple.Create(sourceProperty.Name, Tuple.Create("null", destValue.ToString())));
+                    continue;
+                }
+                else if (destValue == null) 
+                {
+                    returnData.Add(Tuple.Create(sourceProperty.Name, Tuple.Create(sourceValue.ToString(), "null")));
+                    continue;
+                }
+
+                if (sourceValue.ToString() != destValue.ToString()) 
+                {
+                    returnData.Add(Tuple.Create(sourceProperty.Name, Tuple.Create(sourceValue.ToString(), destValue.ToString())));
+                    continue;
+                }
+            }
+            return returnData;
         }
     }
 }
