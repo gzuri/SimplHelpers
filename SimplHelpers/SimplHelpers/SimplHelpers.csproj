@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectionsHelpers.cs" />
+    <Compile Include="EnumHelpers.cs" />
     <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="IpHelpers.cs" />
     <Compile Include="ObjectHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecurityHelpers.cs" />
