@@ -93,5 +93,30 @@ namespace SimplHelpers
             return source + delim + HttpUtility.UrlEncode(key)
                  + "=" + HttpUtility.UrlEncode(value);
         }
+
+
+        public static Dictionary<string, string> GetQueryParamsFromUri(string sourcePath) 
+        {
+            if (sourcePath.LastIndexOf('?') != -1)
+                sourcePath = sourcePath.Substring(sourcePath.LastIndexOf('?') + 1, sourcePath.Length - sourcePath.LastIndexOf('?') - 1);
+            if (String.IsNullOrWhiteSpace(sourcePath))
+                return new Dictionary<string, string> { };
+
+            return sourcePath.Split('&')
+                .Select(x => 
+                {
+                    var elKey = String.Empty;
+                    var elValue = String.Empty;
+
+                    if (x.Contains('='))
+                    {
+                        var el = x.Split('=');
+                        elKey = el[0];
+                        if (el.Count() > 1)
+                            elValue = el[1];
+                    }
+                    return new { Key = elKey, Value = elValue };
+                }).ToDictionary(x=>x.Key, x=>x.Value);
+        }
     }
 }
