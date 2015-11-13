@@ -32,5 +32,12 @@ namespace SimplHelpers
             }
             return true;
         }
+
+        public static int CalculateNumericValue(IPAddress address)
+        {
+            var addressOctets = address.ToString().Split('.').Select(x=> Convert.ToInt32(x)).ToArray();
+
+            return (addressOctets[0] * 16777216) + (addressOctets[1] * 65536) + (addressOctets[2] * 256) + addressOctets[3];
+        }
     }
 }
