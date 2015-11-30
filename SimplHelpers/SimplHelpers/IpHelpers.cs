@@ -33,11 +33,11 @@ namespace SimplHelpers
             return true;
         }
 
-        public static int CalculateNumericValue(IPAddress address)
+        public static long CalculateNumericValue(IPAddress address)
         {
-            var addressOctets = address.ToString().Split('.').Select(x=> Convert.ToInt32(x)).ToArray();
+            var addressOctets = address.ToString().Split('.').Select(x=> Convert.ToInt64(x)).ToArray();
 
-            return (addressOctets[0] * 16777216) + (addressOctets[1] * 65536) + (addressOctets[2] * 256) + addressOctets[3];
+            return (addressOctets[0] * (long)16777216) + (addressOctets[1] * (long)65536) + (addressOctets[2] * (long)256) + addressOctets[3];
         }
     }
 }

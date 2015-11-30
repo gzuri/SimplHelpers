@@ -22,5 +22,16 @@ namespace SimplHelpers.Test
             Assert.AreEqual(numericAddress, 1490665038);
         }
 
+        [TestMethod]
+        public void CalculateIpNumericValue_ExceedsMaxIntValue()
+        {
+            var stringAddress = "176.4.0.0";
+            var ipAddress = IPAddress.Parse(stringAddress);
+
+            var numericAddress = IpHelpers.CalculateNumericValue(ipAddress);
+
+            Assert.AreEqual(numericAddress, 2953052160);
+        }
+
     }
 }

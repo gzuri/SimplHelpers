@@ -5,3 +5,9 @@ C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\
 C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.pdb
 C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\Interop.SystemMonitor.dll
 C:\Users\goran.zuri\Documents\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.csproj.ResolveComReference.cache
+C:\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\bin\Debug\SimplHelpers.dll
+C:\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\bin\Debug\SimplHelpers.pdb
+C:\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\Interop.SystemMonitor.dll
+C:\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.csproj.ResolveComReference.cache
+C:\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.dll
+C:\GitHub\SimplHelpers\SimplHelpers\SimplHelpers\obj\Debug\SimplHelpers.pdb
